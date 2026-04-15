@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHON QUESO</title>
+    <style>
+        body {
+            background-color: #fff9e6;
+            font-family: 'Segoe UI', sans-serif;
+            color: #5d4037;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contenedor-principal {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        h1 { 
+            color: #e67e22; 
+            text-transform: uppercase;
+            border-bottom: 2px solid #f1c40f;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .logo-capitular {
+            float: left;
+            width: 190px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            border: 3px solid #f1c40f;
+        }
+
+        .parrafo-original {
+            text-align: justify;
+            font-size: 1.15rem;
+            margin-bottom: 40px;
+        }
+
+        .cuestionario-fijo {
+            clear: both;
+            background: #fffdf2;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #f1c40f;
+        }
+
+        #mensaje-respuesta {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #e67e22;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .grid-botones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .btn-opcion {
+            background: white;
+            border: 1.5px solid #e67e22;
+            color: #e67e22;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-opcion:hover {
+            background: #e67e22;
+            color: white;
+        }
+
+        .creditos {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #a1887f;
+            letter-spacing: 0.5px;
+        }
+
+        .creditos b, .creditos a {
+            color: #8d6e63;
+        }
+
+        .footer-contacto {
+            margin-top: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            background: #fffdf2;
+            color: #e67e22;
+            border: 2px solid #f1c40f;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .footer-contacto:hover {
+            background: #e67e22;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>HOLA BIENVENIDOS A LA PAGINA DE JHON QUESO</h1>
+        
+        <div class="contenido">
+            <img src="LOGO LACTEOS JHON.jpg" alt="Logo Jhon Queso" class="logo-capitular">
+            
+            <p class="parrafo-original">
+                Hola estás en la página oficial de Jhon Queso, marca fundada en el 2025 por <b>Jonathan García</b>. Estamos ubicados en el <b>Barrio El Prado, Calle 9, Cra. 8 #7b94</b>. Aquí puedes ver nuestros productos y hacer pedidos en Planeta Rica, próximamente en Montería o en Montelíbano; ¡HAZ TU PEDIDO Y DISFRUTA DE UN RICO QUESO O CÓMPRALO PARA TU TIENDA!
+            </p>
+        </div>
+
+        <div class="cuestionario-fijo">
+            <div id="mensaje-respuesta">¿Qué información necesitas sobre nuestros productos?</div>
+            
+            <div id="panel-botones" class="grid-botones">
+                <button class="btn-opcion" onclick="mostrar('quesos')">🧀 Ver tipos de Quesos</button>
+                <button class="btn-opcion" onclick="mostrar('lacteos')">🥛 Otros Lácteos</button>
+                <button class="btn-opcion" onclick="mostrar('historia')">📅 Ubicación / Street View</button>
+                <button class="btn-opcion" onclick="mostrar('whatsapp_opcion')">📲 WhatsApp Central</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="creditos">
+        Página creada el: <i>15/04/2026</i> <br>
+        Desarrollada por: <b>Juan Esteban Abad</b> <br>
+        Dirección: <a href="https://www.google.com/maps/place/L%C3%A1cteos+Jhon/@8.4050182,-75.5852873,3a,75y,26.46h,90t/data=!3m7!1e1!3m5!1sTzKDyKw2EGeFCdHyG9Gf5g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DTzKDyKw2EGeFCdHyG9Gf5g%26yaw%3D26.46398!7i16384!8i8192!4m7!3m6!1s0x8e5bb180fac9a965:0xaf0fd7c53a6ac6f4!8m2!3d8.4050498!4d-75.5852682!10e5!16s%2Fg%2F11mcz5x9yp?entry=ttu" target="_blank"><b>Ver en Google Maps</b></a> <br>
+        <b>PLANETA RICA CORDOBA, COLOMBIA</b>
+    </div>
+
+    <a href="https://wa.me" target="_blank" class="footer-contacto">
+        <span>💬</span> WhatsApp: 301 5636345
+    </a>
+
+    <script>
+        function mostrar(tema) {
+            let r = document.getElementById("mensaje-respuesta");
+            let panel = document.getElementById("panel-botones");
+
+            if(tema === 'quesos') {
+                r.innerText = "Tenemos Costeño y habeses Mozzarella. Contacta al personal para hacer tu pedido";
+                panel.innerHTML = `
+                    <button class="btn-opcion" style="grid-column: span 2; background:#e67e22; color:white; border:none;" onclick="window.open('https://wa.me')">✅ Contactar personal</button>
+                    <button class="btn-opcion" style="grid-column: span 2" onclick="mostrar('final')">⬅️ Volver</button>
+                `;
+            } 
+            else if(tema === 'lacteos') {
+                r.innerText = "Ofrecemos suero costeño, mantequilla artesanal y leche pura.";
+                panel.innerHTML = `
+                    <button class="btn-opcion" style="grid-column: span 2; background:#e67e22; color:white; border:none;" onclick="window.open('https://wa.me')">✅ Pedir Lácteos</button>
+                    <button class="btn-opcion" style="grid-column: span 2" onclick="mostrar('final')">⬅️ Volver</button>
+                `;
+            }
+            else if(tema === 'historia') {
+                r.innerText = "Lácteos Jhon está ubicado en el Barrio El Prado. ¡Puedes vernos en el mapa!";
+                panel.innerHTML = `
+                    <button class="btn-opcion" style="grid-column: span 2; background:#4285F4; color:white; border:none;" onclick="window.open('https://www.google.com/maps/place/L%C3%A1cteos+Jhon/@8.4050182,-75.5852873,3a,75y,26.46h,90t/data=!3m7!1e1!3m5!1sTzKDyKw2EGeFCdHyG9Gf5g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DTzKDyKw2EGeFCdHyG9Gf5g%26yaw%3D26.46398!7i16384!8i8192!4m7!3m6!1s0x8e5bb180fac9a965:0xaf0fd7c53a6ac6f4!8m2!3d8.4050498!4d-75.5852682!10e5!16s%2Fg%2F11mcz5x9yp?entry=ttu')">📍 Ver Ubicación Exacta</button>
+                    <button class="btn-opcion" style="grid-column: span 2" onclick="mostrar('final')">⬅️ Volver</button>
+                `;
+            }
+            else if(tema === 'whatsapp_opcion') {
+                r.innerText = "Nuestro número oficial es 301 5636345.";
+                panel.innerHTML = `
+                    <button class="btn-opcion" style="grid-column: span 2; background:#e67e22; color:white; border:none;" onclick="window.open('https://wa.me')">✅ Abrir WhatsApp</button>
+                    <button class="btn-opcion" style="grid-column: span 2" onclick="mostrar('final')">⬅️ Inicio</button>
+                `;
+            }
+            else if(tema === 'final') {
+                r.innerText = "Lo siento, por favor contacta al personal del momento, ten un GRAN DIA.";
+                panel.innerHTML = `
+                    <button class="btn-opcion" onclick="mostrar('quesos')">🧀 Ver tipos de Quesos</button>
+                    <button class="btn-opcion" onclick="mostrar('lacteos')">🥛 Otros Lácteos</button>
+                    <button class="btn-opcion" onclick="mostrar('historia')">📅 Ubicación / Street View</button>
+                    <button class="btn-opcion" onclick="mostrar('whatsapp_opcion')">📲 WhatsApp Central</button>
+                `;
+            }
+        }
+    </script>
+
+</body>
+</html>
